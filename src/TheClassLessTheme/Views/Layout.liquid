@@ -1,51 +1,46 @@
-<!doctype html>
-<html lang="{{ Culture.Name }}">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ Site.SiteName }}</title>
-  <!-- 
-<link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css"/>
-<link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
-<link rel="stylesheet" href="https://unpkg.com/mvp.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
-	<link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/marx.min.css' | href }}">
-	<link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">-->
-		<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+<!DOCTYPE html>
+<html lang="{{ Culture.Name }}" data-theme="{{ Site.Properties.ThemeSettings.ThemeSettings.ThemeVariation.Text }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{{ Site.SiteName }}</title>
+        {% link type:"image/x-icon", rel:"shortcut icon", href:"~/TheClassLessTheme/favicon.ico" %}
+        <!-- 
+        <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+	    <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/marx.min.css' | href }}">
+	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">-->
+      
+        {% if Site.Properties.ThemeSettings.ThemeSettings.UseTinyVersion.Value %}
+            <link rel="stylesheet" href="https://classless.de/classless-tiny.css">
+        {% else %}
+            <link rel="stylesheet" href="https://classless.de/classless.css"/>
+        {% endif %}
+        <link rel="stylesheet" href="https://classless.de/addons/themes.css"/>
+
 	  {% resources type: "Meta" %}
 	  {% resources type: "HeadLink" %}
 	  {% resources type: "Stylesheet" %}
 	  {% resources type: "HeadScript" %}
 	  {% render_section "HeadMeta", required: false %}
   </head>
-<body>
-	<!-- {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_duration: "00:05:00", cache_tag: "alias:main-menu" %} -->
-<nav>
-	<ul>
-		<li>
-			<a href="/" class="brand">{{ Site.SiteName }}</a>
-		</li>
-		<li class="active">
-			<a href="/">Home</a>
-		</li>
-	</ul>
-</nav>
-<main>
-    <div id="top" class="page" role="document">
-      <header role="banner">
-        <h1><a class="navbar-brand" href="{{ '~/' | href }}">{{ Site.SiteName }}</a></h1>
-        <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
-      </header>
-	  {% render_section "Navigation", required: false %}
-      <main role="main">
-		  {% render_body %}        
-      </main>
-		{% render_section "Footer", required: false %}
-		{% resources type: "FootScript" %}
-	</div>
-  </main>
-</body>
+    <body>
+        {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_duration: "00:05:00", cache_tag: "alias:main-menu" %}
+        <main>
+            <div id="top" class="page" role="document">
+            {% render_section "Navigation", required: false %}
+                <main role="main">
+                    {% render_body %}
+                </main>
+                {% render_section "Footer", required: false %}
+                {% resources type: "FootScript" %}
+            </div>
+        </main>
+    </body>
 </html>
+
