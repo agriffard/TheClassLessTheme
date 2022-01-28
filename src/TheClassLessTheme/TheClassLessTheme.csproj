@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Recipes\TheClassLessTheme.recipe.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Recipes\TheClassLessTheme.recipe.json" />
+  </ItemGroup>
+
+  <ItemGroup>
 	  <PackageReference Include="OrchardCore.Theme.Targets" Version="1.2.2" />
 	  <PackageReference Include="OrchardCore.ContentManagement" Version="1.2.2" />
 	  <PackageReference Include="OrchardCore.DisplayManagement" Version="1.2.2" />
