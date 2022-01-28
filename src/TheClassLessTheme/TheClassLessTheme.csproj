@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
 	<TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
@@ -7,17 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Recipes\*" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Recipes\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="Recipes\Images\*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,11 +19,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Recipes\Orchard\*" />
+    <Content Include="Recipes\Orchard\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Recipes\Orchard\*">
+    <Content Include="wwwroot\css\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
