@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Recipes\TheClassLessTheme.recipe.json" />
+    <EmbeddedResource Remove="Recipes" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Recipes\TheClassLessTheme.recipe.json">
+    <Content Include="Recipes">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
