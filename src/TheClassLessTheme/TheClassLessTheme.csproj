@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Recipes" />
+    <EmbeddedResource Remove="Recipes/*" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Recipes">
+    <Content Include="Recipes/*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
