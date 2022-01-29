@@ -25,13 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="wwwroot\css\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="wwwroot\*">
+    <Content Include="Views\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
