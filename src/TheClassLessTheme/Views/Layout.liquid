@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ Site.SiteName }}</title>
+        <title>{{ "PageTitle" | shape_new | shape_stringify }}</title> 
         {% link type:"image/x-icon", rel:"shortcut icon", href:"~/TheClassLessTheme/favicon.ico" %}
         <!-- 
         <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
 	    <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/marx.min.css' | href }}">
+        <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/themes.css' | href }}">
 	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">-->
       
         {% if Site.Properties.ThemeSettings.ThemeSettings.UseTinyVersion.Value %}
