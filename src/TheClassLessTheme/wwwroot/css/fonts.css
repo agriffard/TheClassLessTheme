@@ -1,0 +1,136 @@
+/* All typefaces in the Libertinus Fonts project are released under the terms of the Open Font License, version 1.1. See
+the license file OFL.txt (https://github.com/alerque/libertinus/blob/master/OFL.txt) for details.*/
+
+/* for Sepia */
+
+@font-face {
+    font-family: 'Libertinus Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/LibertinusSans/LibertinusSans-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''), url('../fonts/LibertinusSans/LibertinusSans-Italic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/LibertinusSans/LibertinusSans-Bold.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSerif-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSerif-Italic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSerif-Semibold.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    font-style: italic;
+    font-weight: 600;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSerif-SemiboldItalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSans-Bold.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSerif-BoldItalic.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Libertinus Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/LibertinusSerif/LibertinusSerifDisplay-Regular.otf') format('otf');
+}
+
+/* for milligram */
+
+/*License: https://github.com/googlefonts/roboto/blob/main/LICENSE */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: url(../fonts/Roboto/Roboto-LightItalic.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/Roboto/Roboto-BoldItalic.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* for medium */
+
+/*Copyright 2019 Omnibus-Type (www.omnibus-type.com | omnibus.type@gmail.com)
+Licensed under the SIL Open Font License, 1.1; you may not use this file except in compliance with the License.*/
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Archivo/Archivo-Regular.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/*This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is copied below, and is also
+available with a FAQ at http://scripts.sil.org/OFL */
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Lora/Lora-Regular.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
