@@ -14,17 +14,17 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
 	    <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/marx.min.css' | href }}">
-	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">-->
+	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">"-->
       
         {% if Site.Properties.ThemeSettings.ThemeSettings.UseTinyVersion.Value %}
-            <link rel="stylesheet" href="https://classless.de/classless-tiny.css">
-            <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/classless-tiny.css' | href }}">
+            {% style src:"~/TheClassLessTheme/css/classless-tiny.css",
+                cdn_src:"https://classless.de/classless-tiny.css" %}
         {% else %}
-            <link rel="stylesheet" href="https://classless.de/classless.css"/>
-            <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/classless.css' | href }}">
+            {% style src:"~/TheClassLessTheme/css/classless.css",
+                cdn_src:"https://classless.de/classless.css" %}
         {% endif %}
-        <link rel="stylesheet" href="https://classless.de/addons/themes.css"/>
-        <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/themes.css' | href }}">
+            {% style src:"~/TheClassLessTheme/css/themes.css",
+                cdn_src:"https://classless.de/classless.css" %}
 
 	  {% resources type: "Meta" %}
 	  {% resources type: "HeadLink" %}

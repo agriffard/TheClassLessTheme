@@ -1,5 +1,3 @@
-@import "fonts.css";
-
 /* Classless.css v0.95
 
 Table of Contents:
@@ -10,9 +8,9 @@ Table of Contents:
  5. Classes  (remove unwanted)
 */
 
-/* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
+@import "fonts.css";
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+/* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
 :root, html[data-theme='light'] {
     --rem: 12pt;
