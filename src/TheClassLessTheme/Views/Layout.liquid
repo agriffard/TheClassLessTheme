@@ -17,13 +17,13 @@
 	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">"-->
       
         {% if Site.Properties.ThemeSettings.ThemeSettings.UseTinyVersion.Value %}
-            {% style src:"~/TheClassLessTheme/css/classless-tiny.css",
+            {% style name:"classless-tiny", src:"~/TheClassLessTheme/css/classless-tiny.css",
                 cdn_src:"https://classless.de/classless-tiny.css" %}
         {% else %}
-            {% style src:"~/TheClassLessTheme/css/classless.css",
+            {% style name:"classless", src:"~/TheClassLessTheme/css/classless.css",
                 cdn_src:"https://classless.de/classless.css" %}
         {% endif %}
-            {% style src:"~/TheClassLessTheme/css/themes.css",
+            {% style name:"themes", src:"~/TheClassLessTheme/css/themes.css",
                 cdn_src:"https://classless.de/addons/themes.css" %}
 
 	  {% resources type: "Meta" %}
