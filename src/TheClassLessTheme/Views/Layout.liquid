@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ Site.SiteName }}</title>
+        <title>{{ "PageTitle" | shape_new | shape_stringify }}</title> 
         {% link type:"image/x-icon", rel:"shortcut icon", href:"~/TheClassLessTheme/favicon.ico" %}
         <!-- 
         <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
@@ -14,14 +14,17 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
 	    <link rel="stylesheet" href="{{ '~/TheClassLessTheme/css/marx.min.css' | href }}">
-	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">-->
+	    <link rel="stylesheet" href="https://mblode.github.io/marx/stylesheets/all-3e842764.css">"-->
       
         {% if Site.Properties.ThemeSettings.ThemeSettings.UseTinyVersion.Value %}
-            <link rel="stylesheet" href="https://classless.de/classless-tiny.css">
+            {% style name:"classless-tiny", src:"~/TheClassLessTheme/css/classless-tiny.css",
+                cdn_src:"https://classless.de/classless-tiny.css" %}
         {% else %}
-            <link rel="stylesheet" href="https://classless.de/classless.css"/>
+            {% style name:"classless", src:"~/TheClassLessTheme/css/classless.css",
+                cdn_src:"https://classless.de/classless.css" %}
         {% endif %}
-        <link rel="stylesheet" href="https://classless.de/addons/themes.css"/>
+            {% style name:"themes", src:"~/TheClassLessTheme/css/themes.css",
+                cdn_src:"https://classless.de/addons/themes.css" %}
 
 	  {% resources type: "Meta" %}
 	  {% resources type: "HeadLink" %}
@@ -34,9 +37,7 @@
         <main>
             <div id="top" class="page" role="document">
             {% render_section "Navigation", required: false %}
-                <main role="main">
                     {% render_body %}
-                </main>
                 {% render_section "Footer", required: false %}
                 {% resources type: "FootScript" %}
             </div>
