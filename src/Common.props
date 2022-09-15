@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <Authors>Antoine Griffard</Authors>
-    <RepositoryUrl>https://github.com/agriffard/TheClassLessTheme.OrchardCore</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/agriffard/TheClassLessTheme.OrchardCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/agriffard/TheClassLessTheme</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/agriffard/TheClassLessTheme</PackageProjectUrl>
     <TargetFramework>net6.0</TargetFramework>
     <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
