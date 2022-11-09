@@ -5,7 +5,7 @@
     <Title>ClassLess theme for Orchard Core</Title>
     <Description>Orchard Core Theme based on Class Less frameworks.</Description>
     <PackageTags>ClassLess;OrchardCore</PackageTags>
-    <VersionPrefix>1.4.0</VersionPrefix>
+    <VersionPrefix>1.5.0</VersionPrefix>
     <VersionSuffix></VersionSuffix>
   </PropertyGroup>
 
