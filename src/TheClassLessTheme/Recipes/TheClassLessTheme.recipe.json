@@ -44,7 +44,7 @@
         "OrchardCore.Scripting",
         "OrchardCore.Layers",
         "OrchardCore.Lists",
-        "OrchardCore.Lucene",
+        "OrchardCore.Search.Lucene",
         "OrchardCore.Markdown",
         "OrchardCore.Media",
         "OrchardCore.Title",
