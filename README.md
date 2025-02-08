@@ -14,9 +14,9 @@ Orchard Core theme with Classless frameworks.
 
 ## Credits
 
-https://github.com/igoradamenko/awsm.css  
-https://github.com/EvgenyOrekhov/holiday.css  
-https://github.com/mblode/marx  
-https://github.com/andybrewer/mvp  
-https://github.com/oxalorg/sakura  
-https://github.com/kognise/water.css  
+<https://github.com/igoradamenko/awsm.css>
+<https://github.com/EvgenyOrekhov/holiday.css>  
+<https://github.com/mblode/marx>
+<https://github.com/andybrewer/mvp>  
+<https://github.com/oxalorg/sakura>
+<https://github.com/kognise/water.css>
