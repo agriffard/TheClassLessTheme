@@ -875,12 +875,34 @@
       "Layers": [
         {
           "Name": "Always",
-          "Rule": "true",
+          "LayerRule": {
+            "Conditions": [
+              {
+                "$type": "OrchardCore.Rules.Models.BooleanCondition, OrchardCore.Rules",
+                "Value": true,
+                "Name": "BooleanCondition",
+                "ConditionId": "4w4vmrmz9mf0hv3a7v9qpm72xg"
+              }
+            ],
+            "Name": null,
+            "ConditionId": "4jrrhmb4a1pmv4whx5rvyh14na"
+          },
           "Description": "The widgets in this layer are displayed on any page of this site."
         },
         {
           "Name": "Homepage",
-          "Rule": "isHomepage()",
+          "LayerRule": {
+            "Conditions": [
+              {
+                "$type": "OrchardCore.Rules.Models.HomepageCondition, OrchardCore.Rules",
+                "Value": true,
+                "Name": "HomepageCondition",
+                "ConditionId": "4fs2pce845jm867cvzf0cpw856"
+              }
+            ],
+            "Name": null,
+            "ConditionId": "4rdf2ykd6qx8s3ey03gg8hmv4h"
+          },
           "Description": "The widgets in this layer are only displayed on the homepage."
         }
       ]
